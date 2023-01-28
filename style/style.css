@@ -14,10 +14,12 @@ html {
 .texto {
   text-align: center;
   align-items: center;
-  margin: 5vh 5vh;
+  margin: 2vh 5vh;
 }
 .boton {
   display: flex;
+  border: 0ch;
+  background-color: transparent;
 }
 .yinyang {
   margin: 5vh 5vh;
