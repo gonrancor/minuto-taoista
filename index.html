@@ -8,14 +8,14 @@
     <title>Minuto taoista</title>
   </head>
   <body class="index">
-    <div class="texto">
+    <div class="textoEncabezado">
       <h1>Minuto Taoista</h1>
       <h2>Meditaciones taoistas de Lao Tse - Hua Hu Ching</h2>
     </div>
-    <button class="boton">
+    <button id="btn" class="btn">
       <div class="yinyang"></div>
     </button>
-    <div id="1" class="texto">
+    <div id="uno" class="oculto">
       <h2>1</h2>
       <p>
         Yo enseño, el Camino Integral de unidad con el gran y misterioso Tao.
@@ -28,7 +28,7 @@
         simple conduce a la paz, a la virtud y a la abundancia.
       </p>
     </div>
-    <div id="2" class="texto">
+    <div id="dos" class="oculto">
       <h2>2</h2>
       <p>
         Los hombres y las mujeres que desean ser conscientes de toda la verdad
@@ -40,5 +40,37 @@
         pies se hallan firmemente plantados en el camino que regresa al Tao.
       </p>
     </div>
+    <div id="tres" class="oculto">
+      <h2>3</h2>
+      <p>
+        Quienes desean encarnar el Tao han de aceptarlo todo. Aceptarlo todo
+        significa en primer lugar no tener cólera ni resistencia hacia ninguna
+        idea o cosa, viva o muerta, con forma o sin forma. La aceptación es la
+        verdadera esencia del Tao. Aceptarlo todo también significa apartarse de
+        cualquier concepto de separación: hombre y mujer, yo y otro, vida y
+        muerte. La división es contraria a la naturaleza del Tao. Renunciando al
+        antagonismo y a la separación se entra en la unidad armoniosa de todas
+        las cosas.
+      </p>
+    </div>
+
+    <script>
+      btn.addEventListener("click", pincharon);
+      function pincharon() {
+        var min = 1;
+        var max = 3;
+        var x = Math.floor(Math.random() * (max - min + 1) + min);
+        if (x == 1) {
+          var uno = document.getElementById("uno");
+          uno.style.display = "flex";
+        } else if (x == 2) {
+          var uno = document.getElementById("dos");
+          uno.style.display = "flex";
+        } else {
+          var uno = document.getElementById("tres");
+          uno.style.display = "flex";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -11,12 +11,20 @@ html {
   justify-content: center;
   background-color: rgb(141, 161, 180);
 }
+.textoEncabezado {
+  text-align: center;
+  align-items: center;
+  margin: 2vh 5vh;
+}
 .texto {
   text-align: center;
   align-items: center;
   margin: 2vh 5vh;
 }
-.boton {
+.oculto {
+  display: none;
+}
+.btn {
   display: flex;
   border: 0ch;
   background-color: transparent;
@@ -94,4 +102,5 @@ html {
     transform: rotate(-360deg);
   }
 }
+
 /* fin de index */
