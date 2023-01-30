@@ -13,7 +13,7 @@
       <h2>Meditaciones taoistas de Lao Tse - Hua Hu Ching</h2>
     </div>
     <button id="btn" class="btn">
-      <div class="yinyang"></div>
+      <img src="/img/yiny.png" alt="YinYang" />
     </button>
     <div id="uno" class="oculto">
       <h2>1</h2>
@@ -62,13 +62,13 @@
         var x = Math.floor(Math.random() * (max - min + 1) + min);
         if (x == 1) {
           var uno = document.getElementById("uno");
-          uno.className = "texto";
+          uno.className = uno.className.replace("oculto", "texto");
         } else if (x == 2) {
           var uno = document.getElementById("dos");
-          dos.className = "texto";
+          dos.className = dos.className.replace("oculto", "texto");
         } else {
           var uno = document.getElementById("tres");
-          tres.className = "texto";
+          tres.className = tres.className.replace("oculto", "texto");
         }
       }
     </script>
