@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/imagenes/yy.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Minuto taoista</title>
   </head>
@@ -62,13 +63,13 @@
         var x = Math.floor(Math.random() * (max - min + 1) + min);
         if (x == 1) {
           var uno = document.getElementById("uno");
-          uno.className = uno.className.replace("oculto", "texto");
+          location.href = "uno.html";
         } else if (x == 2) {
           var uno = document.getElementById("dos");
-          dos.className = dos.className.replace("oculto", "texto");
+          location.href = "dos.html";
         } else {
           var uno = document.getElementById("tres");
-          tres.className = tres.className.replace("oculto", "texto");
+          location.href = "tres.html";
         }
       }
     </script>
