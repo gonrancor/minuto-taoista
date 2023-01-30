@@ -26,6 +26,9 @@
   height: 50%;
   width: 50%;
 }
+.fondoMeditaciones {
+  background-color: rgb(175, 175, 175);
+}
 .meditexto {
   font-family: "Roboto Serif", serif;
   text-align: center;
