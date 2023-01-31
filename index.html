@@ -24,17 +24,16 @@
       btn.addEventListener("click", pincharon);
       function pincharon() {
         var min = 1;
-        var max = 3;
+        var max = 4;
         var x = Math.floor(Math.random() * (max - min + 1) + min);
         if (x == 1) {
-          var uno = document.getElementById("uno");
           location.href = "uno.html";
         } else if (x == 2) {
-          var uno = document.getElementById("dos");
           location.href = "dos.html";
-        } else {
-          var uno = document.getElementById("tres");
+        } else if (x == 3) {
           location.href = "tres.html";
+        } else if (x == 4) {
+          location.href = "cuatro.html";
         }
       }
     </script>
