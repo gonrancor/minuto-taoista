@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(141, 161, 180);
+  background-color: rgb(197, 213, 226);
 }
 .textoEncabezado {
   text-align: center;
@@ -14,6 +14,19 @@
   text-align: center;
   align-items: center;
   margin: 2vh 5vh;
+  font-family: "Solitreo", cursive;
+  font-size: 2em;
+}
+.txt-titulo {
+  text-align: center;
+  align-items: center;
+  margin: 2vh 5vh;
+  font-family: "Solitreo", cursive;
+  font-size: 2.5em;
+}
+.txt-explicativo {
+  font-size: 1.3em;
+  font-family: "Solitreo", cursive;
 }
 .oculto {
   display: none;
@@ -61,5 +74,30 @@
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1;
+  }
+}
+/* efecto para yin- yanng */
+.rotate-center {
+  -webkit-animation: rotate-center 0.9s ease-in-out 0.5s both;
+  animation: rotate-center 0.9s ease-in-out 0.5s both;
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
