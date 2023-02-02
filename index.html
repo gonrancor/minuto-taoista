@@ -24,7 +24,7 @@
       btn.addEventListener("click", pincharon);
       function pincharon() {
         var min = 1;
-        var max = 6;
+        var max = 10;
         var x = Math.floor(Math.random() * (max - min + 1) + min);
         if (x == 1) {
           location.href = "./meditaciones/uno.html";
@@ -38,6 +38,14 @@
           location.href = "./meditaciones/cinco.html";
         } else if (x == 6) {
           location.href = "./meditaciones/seis.html";
+        } else if (x == 7) {
+          location.href = "./meditaciones/siete.html";
+        } else if (x == 8) {
+          location.href = "./meditaciones/ocho.html";
+        } else if (x == 9) {
+          location.href = "./meditaciones/nueve.html";
+        } else if (x == 10) {
+          location.href = "./meditaciones/diez.html";
         }
       }
     </script>
