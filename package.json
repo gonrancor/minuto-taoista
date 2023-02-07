@@ -1,0 +1,22 @@
+{
+  "name": "minuto-taoista-pag",
+  "version": "1.0.0",
+  "description": "Minuto taoista",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonrancor/minutotaoista.git"
+  },
+  "author": "Gonzalo Rancor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonrancor/minutotaoista/issues"
+  },
+  "homepage": "https://github.com/gonrancor/minutotaoista#readme",
+  "dependencies": {
+    "firebase": "^9.17.1"
+  }
+}
